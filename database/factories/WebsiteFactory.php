@@ -14,7 +14,9 @@ class WebsiteFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->company(),
+            'domain' => $this->faker->unique()->domainName,
+            'description' => $this->faker->sentence(5)
         ];
     }
 }

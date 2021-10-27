@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class WebsiteSeeder extends Seeder
+class PostSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +13,6 @@ class WebsiteSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Website::factory(5)->create();
+        \App\Models\Post::factory(20)->create();
     }
 }
